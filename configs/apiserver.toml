@@ -1,0 +1,4 @@
+bind_addr = ":8080"
+log_level = "debug"
+database_url = "user=nichi password=1 host=localhost dbname=restapi_dev sslmode=disable"
+session_key = "52345gertb546f134vj23mb4356nmv2345jknsdt134v5dfybfghber5634578876iuyt554uhy56yhtry6uuyhgtr3refd"

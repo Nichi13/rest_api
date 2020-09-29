@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="de7625f3-ce2e-4757-9177-30d5ff21f528" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1hzeNpoRuq5ZHJyM53WvkyamMpp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/internal/app/model" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/internal/app/model" />
+      <recent name="$PROJECT_DIR$/internal/app/store/sqlstore" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/migrations" />
+      <recent name="$PROJECT_DIR$/internal/app/store" />
+      <recent name="$PROJECT_DIR$/internal/app/store/sqlstore" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Test.TestServer_HandleSessionsCreate in gismart-rest-api/internal/app/apiserver">
+    <configuration name="20200926172642_create_users.up.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/migrations/20200926172642_create_users.up.sql" />
+      <script-mode>FILE</script-mode>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestServer_AuthenticateUser in gismart-rest-api/internal/app/apiserver" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="gismart-rest-api" />
+      <working_directory value="$PROJECT_DIR$/internal/app/apiserver" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="gismart-rest-api/internal/app/apiserver" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestServer_AuthenticateUser\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestServer_HandleSessionsCreate in gismart-rest-api/internal/app/apiserver" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="gismart-rest-api" />
+      <working_directory value="$PROJECT_DIR$/internal/app/apiserver" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="gismart-rest-api/internal/app/apiserver" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestServer_HandleSessionsCreate\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestUserRepository_Find in gismart-rest-api/internal/app/store/sqlstore" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="gismart-rest-api" />
+      <working_directory value="$PROJECT_DIR$/internal/app/store/sqlstore" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="gismart-rest-api/internal/app/store/sqlstore" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestUserRepository_Find\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestUserRepository_Find in gismart-rest-api/internal/app/store/teststore" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="gismart-rest-api" />
+      <working_directory value="$PROJECT_DIR$/internal/app/store/teststore" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="gismart-rest-api/internal/app/store/teststore" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestUserRepository_Find\E$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.TestServer_HandleSessionsCreate in gismart-rest-api/internal/app/apiserver" />
+        <item itemvalue="Database Script.20200926172642_create_users.up.sql" />
+        <item itemvalue="Go Test.TestServer_AuthenticateUser in gismart-rest-api/internal/app/apiserver" />
+        <item itemvalue="Go Test.TestUserRepository_Find in gismart-rest-api/internal/app/store/teststore" />
+        <item itemvalue="Go Test.TestUserRepository_Find in gismart-rest-api/internal/app/store/sqlstore" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="622" y="234" width="732" height="637" key="#Inspections" timestamp="1601311765733">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="622" y="234" width="732" height="637" key="#Inspections/67.27.1853.1053@67.27.1853.1053" timestamp="1601311765733" />
+    <state x="223" y="377" width="604" height="350" key="#Notifications" timestamp="1601131279961">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="223" y="377" width="604" height="350" key="#Notifications/67.27.1853.1053@67.27.1853.1053" timestamp="1601131279961" />
+    <state x="67" y="404" width="1384" height="297" key="#SQL_Dialects" timestamp="1601292747497">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="67" y="404" width="1384" height="297" key="#SQL_Dialects/67.27.1853.1053@67.27.1853.1053" timestamp="1601292747497" />
+    <state x="125" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601292364190">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="125" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1601292364190" />
+    <state x="167" y="125" width="1653" height="855" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1601232854311">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="167" y="125" width="1653" height="855" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1601232854311" />
+    <state x="313" y="311" width="424" height="484" key="FileChooserDialogImpl" timestamp="1601226983011">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="313" y="311" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1601226983011" />
+    <state width="1807" height="278" key="GridCell.Tab.0.bottom" timestamp="1601325698047">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="278" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1601325698047" />
+    <state width="1807" height="278" key="GridCell.Tab.0.center" timestamp="1601325698045">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="278" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1601325698045" />
+    <state width="1807" height="278" key="GridCell.Tab.0.left" timestamp="1601325698043">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="278" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1601325698043" />
+    <state width="1807" height="278" key="GridCell.Tab.0.right" timestamp="1601325698046">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1807" height="278" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1601325698046" />
+    <state x="67" y="187" key="SettingsEditor" timestamp="1601226927356">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="67" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1601226927356" />
+    <state x="854" y="400" width="367" height="305" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1601367484371">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="854" y="400" width="367" height="305" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/67.27.1853.1053@67.27.1853.1053" timestamp="1601367484371" />
+    <state x="746" y="370" width="484" height="365" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1601299008742">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="746" y="370" width="484" height="365" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1601299008742" />
+    <state x="683" y="161" width="620" height="783" key="find.popup" timestamp="1601370181929">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="683" y="161" width="620" height="783" key="find.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1601370181929" />
+    <state x="826" y="311" width="325" height="482" key="refactoring.ChangeSignatureDialog" timestamp="1601324501507">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="826" y="311" width="325" height="482" key="refactoring.ChangeSignatureDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1601324501507" />
+    <state x="193" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1601289655223">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="193" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1601289655223" />
+  </component>
+</project>
