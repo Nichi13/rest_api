@@ -9,7 +9,6 @@ import (
 
 type Store struct {
 	db *sql.DB
-	userRepository *UserRepository
 	menuRepository *MenuRepository
 	orderRepository *OrderRepository
 }
@@ -20,16 +19,6 @@ func New(db *sql.DB) *Store{
 	}
 }
 
-func (s *Store) User() store.UserRepository {
-	if s.userRepository != nil {
-		return s.userRepository
-	}
-
-	s.userRepository = &UserRepository{
-		store: s,
-	}
-	return s.userRepository
-}
 
 func (s *Store) Menu() store.MenuRepository {
 	if s.menuRepository != nil {

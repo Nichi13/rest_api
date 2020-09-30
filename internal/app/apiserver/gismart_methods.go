@@ -6,13 +6,13 @@ import (
 	"gismart-rest-api/internal/app/model"
 	"net/http"
 	"strconv"
-	"strings"
 )
 
 var (
 	errStatusValidateError = errors.New("Incorrect status")
 )
 
+// Метод для создания новой позиции меню
 func (s *server) handleMenuCreate() http.HandlerFunc {
 	type request struct {
 		Name string `json:"name"`
@@ -38,10 +38,11 @@ func (s *server) handleMenuCreate() http.HandlerFunc {
 	}
 }
 
+// Метод для создания нового заказа
 func (s *server) handleOrderCreate() http.HandlerFunc {
 	type request struct {
-		Dishes string `json:"dishes"`
-		Count string `json:"count"`
+		Dishes []string `json:"dishes"`
+		Count []string `json:"count"`
 	}
 	return func(w http.ResponseWriter, r *http.Request) {
 		req := &request{}
@@ -49,13 +50,11 @@ func (s *server) handleOrderCreate() http.HandlerFunc {
 			s.error(w,r, http.StatusBadRequest, err)
 			return
 		}
-		dishes := strings.Split(string(req.Dishes), `,`)
-		counts := strings.Split(string(req.Count), `,`)
-		if len(dishes) != len(counts) {
+		if int(len(req.Dishes)) != int(len(req.Count)) {
 			s.error(w, r, http.StatusUnauthorized, errLenValidateError)
 			return
 		}
-		order_number, err := s.store.Order().Create(dishes, counts);
+		order_number, err := s.store.Order().Create(req.Dishes, req.Count);
 		if err != nil {
 			s.error(w, r, http.StatusUnprocessableEntity, errValueValidateError )
 			return
@@ -65,6 +64,7 @@ func (s *server) handleOrderCreate() http.HandlerFunc {
 	}
 }
 
+// Метод для изменения статуса заказа
 func (s *server) handlerChangeOrderStatus() http.HandlerFunc {
 	type request struct {
 		Number int `json:"number,string"`
@@ -94,18 +94,15 @@ func (s *server) handlerChangeOrderStatus() http.HandlerFunc {
 	}
 }
 
+// Метод для получения списка заказов
 func (s *server) handlerGetOrders() http.HandlerFunc {
 	type request struct {
 		Status string `json:"status"`
 	}
 	return func(w http.ResponseWriter, r *http.Request) {
-		req := &request{}
-		if err := json.NewDecoder(r.Body).Decode(req); err != nil {
-			s.error(w, r, http.StatusBadRequest, err)
-			return
-		}
-		if req.Status == "new" || req.Status == "ready" {
-			m, err := s.store.Order().Get(req.Status);
+		status := r.FormValue("status")
+		if status == "new" || status == "ready" {
+			m, err := s.store.Order().Get(status);
 			if err != nil {
 				s.error(w, r, http.StatusUnprocessableEntity, err )
 				return
@@ -115,6 +112,6 @@ func (s *server) handlerGetOrders() http.HandlerFunc {
 			s.error(w,r, http.StatusBadRequest, errStatusValidateError)
 			return
 		}
-
 	}
+
 }

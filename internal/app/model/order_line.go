@@ -1,5 +1,6 @@
 package model
 
+// Модель для позиции заказа
 type Order_line struct {
 	ID int `json:"id"`
 	OrderId int `json:"order_id"`
