@@ -21,6 +21,7 @@ func main()  {
 	flag.Parse()
 
 	//	для подключения базы данных нужно ввести пользователя и пароль (db_user = "user=name", password = "password=1")
+	//  также нужно создать новую базу postgres командой $ createdb restapi_dev
 	//  после запустить Makefile командой $ make
 	//  запустить миграции командой $ migrate -path migrations -database "postgres://user:password@localhost/restapi_dev?sslmode=disable" up
 	//  параметры конфигурирования базы данных находятся в файле configs/apiserver.toml
