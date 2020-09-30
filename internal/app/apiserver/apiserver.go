@@ -5,10 +5,16 @@ import (
 	"gismart-rest-api/internal/app/store/sqlstore"
 	"github.com/gorilla/sessions"
 	"net/http"
+	"strings"
 )
 
-func Start(config *Config) error {
-	db, err := newDB(config.DatabaseURL)
+func Start(config *Config, user string, password string) error {
+	databaseURL := config.DatabaseURL
+	if user != "" {
+		params := []string{user, password, config.DatabaseURL}
+		databaseURL = strings.Join(params, " ")
+	}
+	db, err := newDB(databaseURL)
 	if err != nil {
 		return err
 	}
